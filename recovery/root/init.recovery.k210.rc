@@ -1,0 +1,8 @@
+#add for board init.rc for recovery mode
+
+
+service gpsd /vendor/bin/gpsd
+    class core
+    user system
+    group gps system shell inet net_raw wifi
+
